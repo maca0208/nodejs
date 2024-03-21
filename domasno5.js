@@ -20,19 +20,19 @@ const server = http.createServer((req,res) => {
         let result;
 
         if(operator === 'add'){
-            result = parseFloat(num1) + parseFloat(num2);
+            result = Number(num1) + Number(num2);
         } else if (operator === 'subtract'){
-            result = parseFloat(num1) - parseFloat(num2);
+            result = Number(num1) - Number(num2);
         } else if (operator === 'multiply'){
-            result = parseFloat(num1) * parseFloat(num2);
+            result = Number(num1) * Number(num2);
         } else if (operator === 'divide'){
-            result = parseFloat(num1) / parseFloat(num2);
+            result = Number(num1) / Number(num2);
         } else if (operator === 'modulus'){
-            result = parseFloat(num1) % parseFloat(num2);
+            result = Number(num1) % Number(num2);
         } else if (operator === 'square'){
-            result = Math.pow (parseFloat(num1), 2);
+            result = Math.pow (Number(num1), 2);
         } else if (operator === 'cube'){
-            result = Math.pow (parseFloat(num1), 3);
+            result = Math.pow (Number(num1), 3);
         } else {
             result = 'Invalid operation';
         }
