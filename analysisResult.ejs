@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Analysis Result</title>
+    </head>
+    <body>
+        <h1>Analysis Result</h1>
+        <ul>
+            <li>Total Characters: <%= analysisResult.cahracterCount %></li>
+            <li>Total Words: <%= analysisResult.wordCount %></li>
+            <li>Short Words (<5 characters): <%= analysisResult.shortWords %></li>
+            <li>Long Words (>5 characters): <%= analysisResult.longWords %></li>
+            <li>Equal Words (5 characters): <%=  analysisResult.equalWords %></li>
+            <li>Total Sentences: <%= analysisResult.sentenceCount %></li>
+            <li>Words Starting with Vowel: <%= analysisResult.vowelWords %></li>
+        </ul>
+    </body>
+</html>
+
